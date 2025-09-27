@@ -30,7 +30,7 @@ app.use("/auth", authRoutes);
 
 // MongoDB connect
 mongoose
-  .connect("mongodb://127.0.0.1:27017/passport_local_demo")
+  .connect("mongodb://localhost:27017/passport_local_demo")
   .then(() => {
     console.log("MongoDB connected");
     app.listen(3000, () => console.log("Server running on http://localhost:3000"));
